@@ -1,0 +1,351 @@
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin-right: -10px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0;
+    list-style-type: disc;
+}
+
+.navegacao{
+    box-sizing:border-box;
+    color:rgb(0, 0, 0);
+    display:block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:13px;
+    height:52.6px;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin-block-end:0px;
+    margin-block-start:0px;
+    margin-bottom:0px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    outline-color:rgba(0, 0, 0, 0);
+    outline-style:none;
+    padding-bottom:0px;
+    padding-inline-start:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    text-size-adjust:100%;
+    white-space:nowrap;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.c-heading {
+    cursor:pointer;
+    display:block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-block-end:0px;
+    margin-bottom:0px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    text-size-adjust:100%;
+    color:rgb(0, 0, 0);
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:-0.24px;
+    margin-block-start:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    max-height:212px;
+    opacity:0.95;
+    outline-color:rgba(0, 0, 0, 0);
+    outline-style:none;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    padding-bottom:4px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:36px;
+    text-align:center;
+
+}
+.c-heading-2 {
+    box-sizing:border-box;
+    color:rgb(0, 0, 0);
+    display:block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 46px;
+    font-weight:100;
+    letter-spacing:-0.46px;
+    line-height: 56px;
+    margin-block-end:0px;
+    margin-block-start:0px;
+    margin-bottom:0px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-top:0px;
+    outline-color:rgba(0, 0, 0, 0);
+    outline-style:none;
+    padding-bottom:3px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    text-align:center;
+    text-size-adjust:100%;
+    font-size:46px;
+    font-weight:700;
+}
+
+.c-heading, .c-subheading {
+    line-height: 24px;
+    box-sizing: inherit;
+}
+
+.c-subheading {
+    font-size: 18px;
+
+}
+
+
+h1 {
+    display: block;
+    margin: .67em 0;
+}
+
+h1, h2, h3, h4, h5, h6, ol, p, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    display: inline-block;
+    margin-top: 1px;
+    padding: 16px 30px 16px 12px;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+li a:hover {
+    background-color: #fff;
+}
+
+a body {
+    font-size: 15px;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    font-size: 15px;
+    min-width: 320px;
+    color: #000;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#xbox {
+    height: 450px;
+    max-width: 100%;
+    border: 1px solid black;
+    margin: 10px auto 10px auto;
+}
+
+.compre {
+    cursor:pointer;
+    display:inline-block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:15px;
+    letter-spacing:normal;
+    max-width:100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    vertical-align:top;
+    color:rgb(14, 112, 14);
+    font-weight:900;
+}
+
+.busque {
+    box-sizing:content-box;
+    color:rgb(14, 112, 14);
+    cursor:pointer;
+    display:inline-block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:15px;
+    font-weight:900;
+    vertical-align:top;
+}
+
+.console {
+    box-shadow:rgba(0, 0, 0, 0) 0px 4px 8px 0px;
+    box-sizing:border-box;
+    cursor:pointer;
+    display:inline-block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:15px;
+    font-style:normal;
+    letter-spacing:normal;
+    position:relative;
+    text-align:center;
+    white-space:nowrap;
+    padding: 5px 20px 5px 22px;
+    color: #054b16;
+    font-weight: 900;
+    background: #9bf00b;
+}
+
+.c-paragraph {
+    box-sizing:border-box;
+    color:rgb(0, 0, 0);
+    cursor:pointer;
+    display:block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:15px;
+    height:82px;
+    margin-block-end:0px;
+    margin-block-start:0px;
+    margin-bottom:0px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-top:0px;
+    padding-right:12px;
+    padding-top:2px;
+    text-size-adjust:100%;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+    box-sizing:border-box;
+    color:rgb(0, 0, 0);
+    display:block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.grow2 {
+	flex-grow: 2;
+}
+
+.item {
+    margin: 5px;
+	text-align: center;
+    font-size: 1.5em;
+}
+
+.container2 {
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-color:rgb(0, 0, 0);
+    background-image:none;
+    background-origin:padding-box;
+    background-position-x:0%;
+    background-position-y:0%;
+    background-size:auto;
+    box-sizing:border-box;
+    clear:both;
+    color:rgb(255, 255, 255);
+    display:block;
+    float:left;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:15px;
+    height:330.538px;
+    min-height:0px;
+    outline-color:rgba(0, 0, 0, 0);
+    outline-style:none;
+    position:relative;
+    text-size-adjust:100%;
+    width:882px;
+}
+
+.c-heading-3 {
+    box-sizing:border-box;
+    color:white;
+    display:block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:20px;
+    font-weight:100;
+    height:53px;
+    line-height:24px;
+    margin-block-end:0px;
+    margin-block-start:20px;
+    margin-bottom:0px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-top:20px;
+    opacity:0.95;
+    padding-bottom:5px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    text-align:left;
+    text-size-adjust:100%;
+}
+
+.c-paragraph-3 {
+    box-sizing:border-box;
+    color:white;
+    display:block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:15px;
+    font-weight:400;
+    height:72px;
+    line-height:20px;
+    margin-block-end:0px;
+    margin-block-start:0px;
+    margin-bottom:0px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-top:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:12px;
+    text-align:left;
+    text-size-adjust:100%;
+}
+
+.coxinha {
+    box-sizing:border-box;
+    color:rgb(255, 255, 255);
+    display:block;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:15px;
+    height:197.2px;
+    left:0px;
+    margin-bottom:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    padding-bottom:0px;
+    padding-left:36px;
+    padding-right:36px;
+    padding-top:0px;
+    position:absolute;
+    text-align:left;
+    text-size-adjust:100%;
+    top:165.262px;
+    transform:matrix(1, 0, 0, 1, 0, -98.4);
+    width:441.2px;
+}
+
+.pe{
+    font-size: 15px;
+    height: 316px;
+    text-size-adjust: 100%;
+    width: 922.4px;
+    padding-left: 20px;
+}
+
+#jogos {
+    float: left;
+}
