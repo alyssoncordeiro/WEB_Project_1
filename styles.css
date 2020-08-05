@@ -1,204 +1,291 @@
 ul {
-    display: block;
-    overflow: hidden;
-
+  display: block;
+  overflow: hidden;
 }
 
-.navegacao{
-    display: block;
-    width: 100%;
-    margin: 0 auto;
+.navegacao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+.navegacao ul {
+  list-style-type: none;
+}
+
+.navegacao ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 .cabecalho {
-    cursor:pointer;
-    display:block;
-    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding-bottom:4px;
-    padding-left:0px;
-    padding-right:0px;
-    padding-top:36px;
-    text-align:center;
-    line-height: 28px;
-
+  cursor: pointer;
+  display: block;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding-bottom: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 36px;
+  text-align: center;
+  line-height: 28px;
 }
 .cabecalho2 {
-    box-sizing:border-box;
-    display:block;
-    text-align:center;
-    font-size:46px;
-    font-weight: 700 !important;
+  box-sizing:border-box;
+  display:block;
+  text-align:center;
+  font-size:46px;
+  font-weight: 700 !important;
+  padding-bottom: 15px;
 }
 
-.cabecalho, .sub-cabecalho {
-    line-height: 30px;
-    box-sizing: inherit;
-    padding: 10px;
+.cabecalho,
+.sub-cabecalho {
+  line-height: 30px;
+  box-sizing: inherit;
+  padding: 10px;
 }
 
 .sub-cabecalho {
-    font-size: 18px;
-
-}
-
-.titulo {
-    font-weight: 600 !important;
-    padding-right: 12px;
-    font-size: 20px;
+  font-size: 18px;
 }
 
 h1 {
-    display: block;
-    margin: .67em 0;
+  display: block;
+  margin: 0.67em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid transparent;
-    display: inline-block;
-    margin-top: 1px;
-    padding: 16px 30px 16px 12px;
-    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin-top: 1px;
+  padding: 16px 30px 16px 12px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 
 li a:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 a body {
-    font-size: 15px;
-    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
-    font-size: 15px;
-    min-width: 320px;
-    color: #000;
-    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  min-width: 320px;
+  color: #000;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #xbox {
-    height: 450px;
-    max-width: 100%;
-    margin: 10px auto 10px auto;
-    background-image: url(xboxs.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
+  height: 450px;
+  max-width: 100%;
+  margin: 10px auto 10px auto;
+  background-image: url(xboxs.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 
 #joguinhos {
-    height: 450px;
-    max-width: 100%;
-    background-image: url(jogos.jpg);
-    background-position: center;
-    background-size: cover;
+  height: 450px;
+  max-width: 100%;
+  background-image: url(jogos.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .compre {
-    cursor:pointer;
-    color:rgb(14, 112, 14);
-    font-weight:900;
-    text-align: center;
-    padding-bottom: 45px;
+  cursor: pointer;
+  color: rgb(14, 112, 14);
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.compre:hover{
+text-decoration: underline;
+}
+
+.contra_2 .busque {
+  color: white;
+  padding-bottom: 25px;
 }
 
 .busque {
-    box-sizing:content-box;
-    color:rgb(14, 112, 14);
-    cursor:pointer;
-    display:inline-block;
-    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size:15px;
-    font-weight:900;
-    vertical-align:top;
+  box-sizing: content-box;
+  color: rgb(14, 112, 14);
+  cursor: pointer;
+  display: inline-block;
+  font-family: SegoeProBlack, Segoe UI, SegoeUI, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  vertical-align: top;
+  padding: 10px 3px 7px 0;
 }
 
 .console {
-    box-shadow:rgba(0, 0, 0, 0) 0px 4px 8px 0px;
-    box-sizing:border-box;
-    cursor:pointer;
-    display:inline-block;
-    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size:15px;
-    font-style:normal;
-    letter-spacing:normal;
-    position:relative;
-    text-align:center;
-    white-space:nowrap;
-    padding: 5px 20px 5px 22px;
-    color: #054b16;
-    font-weight: 900;
-    background: #9bf00b;
-    margin-top: 12px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 4px 8px 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  white-space: nowrap;
+  padding: 5px 20px 5px 22px;
+  color: #054b16;
+  font-weight: 900;
+  background: #9bf00b;
+  margin-top: 12px;
 }
 
-.paragrafo {
-    padding-top: 2px;
-    padding-right: 12px;
-    margin-top: 0;
-    margin-bottom: 0;
+.paragrafo{
+  padding-top: 2px;
+  padding-right: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.item {
-    margin: 5px;
-    width: 33.33%;
-    padding-right: 15px;
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: block;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding-bottom: 25px;
 }
 
-.contra_1 {
-    background-color:rgb(0, 0, 0);
-    height:330.538px;
-    position:relative;
+
+.titulo {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600 !important;
+  padding-right: 12px;
 }
 
 .cabecalho3 {
-    font-size: 20px;
-    line-height: 24px;
+  font-size: 34px;
+  line-height: 40px;
 }
 
-.contra_2 {
-    box-sizing:border-box;
-    color:rgb(255, 255, 255);
-    padding-left:36px;
-    padding-right:36px;
-    position:absolute;
-    text-align:left;
-    top:165.262px;
-    transform:matrix(1, 0, 0, 1, 0, -98.4);
-    width:441.2px;
+.paragrafo3 {
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  height: 72px;
+  line-height: 20px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 12px;
+  text-align: left;
+  text-size-adjust: 100%;
 }
 
-.pe{
-    font-size: 15px;
-    height: 316px;
-    text-size-adjust: 100%;
-    width: 922.4px;
-    padding-left: 20px;
+.pe {
+  font-size: 15px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0; 
 }
 
-#jogos {
-    display: inline-flex;
-    padding-top: 30px;
-    margin: 0 45px;
+.pe li a{
+  padding: 0 5px;
 }
 
 #baixo {
-    background: #f2f2f2;
-    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #f2f2f2;
+  font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-#baixo li a{
-    color: #616161;
+#jogos {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  margin: 0 45px;
+}
 
+.item {
+  margin: 5px;
+  text-align: center;
+  padding-right: 15px;
+  text-align: justify;
+}
+
+.flex-item-1 {
+  flex: 1;
+}
+
+.busque:hover {
+  text-decoration: underline;
+}
+
+.contra_2 {
+display: inline-flex;
+flex-direction: column;
+box-sizing:border-box;
+color:rgb(255, 255, 255);
+padding-top: 25px;
+padding-left:36px;
+padding-right:36px;
+text-align:left;
+margin: 0 45px;
+}
+
+.contra_1 {
+  background-color:rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.contra_1 img {
+  max-width: 100%;
 }
