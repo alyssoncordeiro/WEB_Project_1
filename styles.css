@@ -1,81 +1,32 @@
 ul {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    margin-right: -10px;
-    background-color: #fff;
     overflow: hidden;
-    padding: 0;
-    list-style-type: disc;
+
 }
 
 .navegacao{
-    box-sizing:border-box;
-    color:rgb(0, 0, 0);
-    display:block;
-    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size:13px;
-    height:52.6px;
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    margin-block-end:0px;
-    margin-block-start:0px;
-    margin-bottom:0px;
-    margin-inline-end:0px;
-    margin-inline-start:0px;
-    margin-left:0px;
-    margin-right:0px;
-    margin-top:0px;
-    outline-color:rgba(0, 0, 0, 0);
-    outline-style:none;
-    padding-bottom:0px;
-    padding-inline-start:0px;
-    padding-left:0px;
-    padding-right:0px;
-    padding-top:0px;
-    text-size-adjust:100%;
-    white-space:nowrap;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-.c-heading {
+.cabecalho {
     cursor:pointer;
     display:block;
     font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-block-end:0px;
-    margin-bottom:0px;
-    margin-inline-end:0px;
-    margin-inline-start:0px;
-    text-size-adjust:100%;
-    color:rgb(0, 0, 0);
-    font-size:24px;
-    font-weight:700;
-    letter-spacing:-0.24px;
-    margin-block-start:0px;
-    margin-left:0px;
-    margin-right:0px;
-    margin-top:0px;
-    max-height:212px;
-    opacity:0.95;
-    outline-color:rgba(0, 0, 0, 0);
-    outline-style:none;
-    overflow-x:hidden;
-    overflow-y:hidden;
     padding-bottom:4px;
     padding-left:0px;
     padding-right:0px;
     padding-top:36px;
     text-align:center;
+    line-height: 28px;
 
 }
-.c-heading-2 {
+.cabecalho2 {
     box-sizing:border-box;
     color:rgb(0, 0, 0);
     display:block;
@@ -102,12 +53,13 @@ ul {
     font-weight:700;
 }
 
-.c-heading, .c-subheading {
-    line-height: 24px;
+.cabecalho, .sub-cabecalho {
+    line-height: 30px;
     box-sizing: inherit;
+    padding: 10px;
 }
 
-.c-subheading {
+.sub-cabecalho {
     font-size: 18px;
 
 }
@@ -157,8 +109,11 @@ body {
 #xbox {
     height: 450px;
     max-width: 100%;
-    border: 1px solid black;
     margin: 10px auto 10px auto;
+    background-image: url(xboxs.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 }
 
 .compre {
@@ -202,6 +157,7 @@ body {
     color: #054b16;
     font-weight: 900;
     background: #9bf00b;
+    margin-top: 12px;
 }
 
 .c-paragraph {
@@ -232,14 +188,12 @@ body {
     font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.grow2 {
-	flex-grow: 2;
-}
-
 .item {
     margin: 5px;
 	text-align: center;
     font-size: 1.5em;
+    width: 33.33%;
+    padding-right: 15px;
 }
 
 .container2 {
@@ -347,5 +301,7 @@ body {
 }
 
 #jogos {
-    float: left;
+    display: inline-flex;
+    padding-top: 30px;
+    margin: 0 45px;
 }
