@@ -262,6 +262,11 @@ text-decoration: underline;
   text-decoration: underline;
 }
 
+.contra_2 .busque:hover{
+  text-decoration: underline;
+  color:rgb(155, 240, 11);
+}
+
 .contra_2 {
 display: inline-flex;
 flex-direction: column;
