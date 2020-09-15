@@ -1,6 +1,7 @@
 import React from "react";
 import Login from "../Login"
-import {auth, logout} from "../../services"
+import { auth, logout } from "../../services"
+import { Link } from "react-router-dom";
 
 export default function Home(props) {
   return (
@@ -47,16 +48,17 @@ export default function Home(props) {
             </a>
           </li>
         </ul>
-        {!auth() ? <Login/> :  <button onClick={() => logout()}>Sair</button>} 
+        {!auth() ? <Login /> : <button onClick={() => logout()}>Sair</button>}
       </div>
       <div id="xbox">
         {props.children}
-        <h1 class="cabecalho">Atualizar do Xbox 360 para Xbox One</h1>
-        <p class="sub-cabecalho">
-          Com Blu-ray 4k, streaming de Vídeo 4k, jogos HDR e Back Compat, este é
-          o momento perfeito para a atualização.
+        {!auth() && (<div>
+          <h1 class="cabecalho">Analise de sentimento de texto</h1>
+          <p class="sub-cabecalho">
+            Logar para fazer analise
         </p>
-        <p class="console">COMPRE CONSOLES XBOX ONE</p>
+          <Link to="/registro"><p class="console">REGISTRAR</p></Link>
+        </div>)}
       </div>
       <section class="container">
         <div id="jogos">

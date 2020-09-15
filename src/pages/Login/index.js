@@ -1,14 +1,16 @@
 import React, { useState } from "react"
 import axios from "axios"
 import { setUser } from "../../services"
+import { useHistory } from "react-router-dom";
 
 export default function Login() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const history = useHistory();
     function submit() {
         axios.post("https://reqres.in/api/login", { email, password }).then((r) => {
             setUser(r.data.token)
-            window.location.reload();
+            history.push("/procurar");
         })
     }
     return <div>
