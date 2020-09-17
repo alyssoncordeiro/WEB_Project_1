@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import axios from "axios"
-import { setUser } from "../../services"
 import Home from "../Home";
 
 export default function Search() {

@@ -51,14 +51,17 @@ export default function Home(props) {
         {!auth() ? <Login /> : <button onClick={() => logout()}>Sair</button>}
       </div>
       <div id="xbox">
-        {props.children}
-        {!auth() && (<div>
-          <h1 class="cabecalho">Analise de sentimento de texto</h1>
-          <p class="sub-cabecalho">
-            Logar para fazer analise
-        </p>
-          <Link to="/registro"><p class="console">REGISTRAR</p></Link>
-        </div>)}
+        {props.children ? (
+          props.children
+        ) : (
+            <div>
+              <h1 class="cabecalho">Analise de sentimento de texto</h1>
+              <p class="sub-cabecalho">Logar para fazer analise</p>
+              <Link to="/registro">
+                <p class="console">REGISTRAR</p>
+              </Link>
+            </div>
+          )}
       </div>
       <section class="container">
         <div id="jogos">
