@@ -10,15 +10,22 @@ export default function Login() {
     const [password_2, setPassword_2] = useState('')
     const [errors, setErros] = useState({})
     const history = useHistory();
+    const [msg, setMsg] = useState('');
 
     function submit() {
         const validate = validar()
         setErros(validate)
         if (Object.keys(validate).length === 0) {
+            setMsg("Carregando...")
             axios.post("https://reqres.in/api/register", { email, password }).then((r) => {
                 setUser(r.data.token)
-                history.push("/procurar");
-            })
+                history.push({
+                    pathname: '/procurar',
+                    state: "Registro feito com sucesso!!"
+                })
+            }).catch((e) => {
+                setMsg("Erro ao registrar usuário!");
+            });
         }
     }
     function validar() {
@@ -35,9 +42,17 @@ export default function Login() {
         if (password.length < 3) {
             erros.password = "A senha deve ter mais que 3 caracteres"
         }
+        if (!emailIsValid(email)) {
+            erros.email = "E-mail não é válido!!"
+        }
         return erros
     }
-    return <Home> <div className="registro">
+
+    function emailIsValid(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+    }
+
+    return <Home msg={msg}> <div className="registro">
         <label>E-mail {errors.email && <p className="error">{errors.email}</p>}</label>
         <input name="email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
         <label>Senha {errors.password && <p className="error">{errors.password}</p>}</label>

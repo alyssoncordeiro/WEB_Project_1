@@ -51,6 +51,7 @@ export default function Home(props) {
         {!auth() ? <Login /> : <button onClick={() => logout()}>Sair</button>}
       </div>
       <div id="xbox">
+      <p className="positive positive-font">{props.msg}</p>
         {props.children ? (
           props.children
         ) : (

@@ -303,6 +303,11 @@ body {
   background-color: rgb(237, 247, 237);
 }
 
+.positive-font {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
 .negative {
   color: rgb(97, 26, 21);
   background-color: rgb(253, 236, 234);
