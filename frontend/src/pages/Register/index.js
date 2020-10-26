@@ -17,7 +17,7 @@ export default function Login() {
         setErros(validate)
         if (Object.keys(validate).length === 0) {
             setMsg("Carregando...")
-            axios.post("https://reqres.in/api/register", { email, password }).then((r) => {
+            axios.post("/user/register", { email, password }).then((r) => {
                 setUser(r.data.token)
                 history.push({
                     pathname: '/procurar',
