@@ -14,6 +14,7 @@ mongoose.connect('mongodb://localhost:27017/prjweb')
 // importing routes
 const indexRoutes = require('./router/index');
 const userRoutes = require('./router/user');
+const userContent = require('./router/content');
 
 // settings
 app.set('port', process.env.PORT || 5000);
@@ -27,6 +28,7 @@ app.use(express.json());
 // routes
 app.use('/', indexRoutes);
 app.use('/user', userRoutes);
+app.use('/content', userContent);
 
 app.listen(app.get('port'), () => {
   console.log(`server on port ${app.get('port')}`);

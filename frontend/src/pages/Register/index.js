@@ -10,14 +10,15 @@ export default function Login() {
     const [password_2, setPassword_2] = useState('')
     const [errors, setErros] = useState({})
     const history = useHistory();
-    const [msg, setMsg] = useState('');
+    const [msg, setMsg] = useState('')
+    const [name, setName] = useState('')
 
     function submit() {
         const validate = validar()
         setErros(validate)
         if (Object.keys(validate).length === 0) {
             setMsg("Carregando...")
-            axios.post("/user/register", { email, password }).then((r) => {
+            axios.post("/user/register", { name, email, password }).then((r) => {
                 setUser(r.data.token)
                 history.push({
                     pathname: '/procurar',
@@ -30,6 +31,10 @@ export default function Login() {
     }
     function validar() {
         let erros = {}
+
+        if (!name) {
+            erros.name = "Campo Obrigatório!"
+        }
         if (!email) {
             erros.email = "Campo Obrigatório!"
         }
@@ -53,6 +58,8 @@ export default function Login() {
     }
 
     return <Home msg={msg}> <div className="registro">
+        <label>Nome {errors.name && <p className="error">{errors.name}</p>}</label>
+        <input name="name" value={name} onChange={(e) => setName(e.target.value)}></input>
         <label>E-mail {errors.email && <p className="error">{errors.email}</p>}</label>
         <input name="email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
         <label>Senha {errors.password && <p className="error">{errors.password}</p>}</label>
