@@ -11,7 +11,7 @@ export default function Login() {
 
     function submit() {
         setMsg("Carregando...")
-        axios.post("https://reqres.in/api/login", { email, password }).then((r) => {
+        axios.post("/user/login", { email, password }).then((r) => {
             setUser(r.data.token)
             history.push({
                 pathname: '/procurar',
